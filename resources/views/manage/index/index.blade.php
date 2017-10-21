@@ -19,11 +19,11 @@
                 <header class="panel-heading">
                     最新订单
                     <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-chevron-up"></a>
                             <a href="javascript:;" class="fa fa-times"></a>
                          </span>
                 </header>
-                <div class="panel-body">
+                <div class="panel-body" style="display: none;">
                     <section id="unseen">
                         <table class="table table-bordered table-striped table-condensed">
                             <thead>
@@ -73,11 +73,11 @@
                 <header class="panel-heading">
                     最新会员
                     <span class="tools pull-right">
-                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <a href="javascript:;" class="fa fa-chevron-up"></a>
                             <a href="javascript:;" class="fa fa-times"></a>
                          </span>
                 </header>
-                <div class="panel-body">
+                <div class="panel-body" style="display: none;">
                     <section id="unseen">
                         <table class="table table-bordered table-striped table-condensed">
                             <thead>
