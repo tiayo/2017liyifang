@@ -8,7 +8,7 @@
     <meta name="author" content="ThemeBucket">
     <link rel="shortcut icon" href="#" type="image/png">
 
-    <title>@yield('title')-{{config('site.title')}}</title>
+    <title>@yield('title')-{{config('site.title')}} - 管理后台</title>
     @section('style')
         <!--icheck-->
         <link href="{{ asset('/static/adminex/js/iCheck/skins/minimal/minimal.css') }}" rel="stylesheet">
@@ -32,17 +32,7 @@
 <section>
     <!-- left side start-->
     <div class="left-side sticky-left-side">
-
         <!--logo and iconic logo start-->
-        <div class="logo text-center">
-            <h2 style="color: #fff;">{{ config('site.title') }}</h2>
-            {{--<a href="/"></a>--}}
-            {{--<img style="width:200px" src="http://www.startce.com/skin/zd/images/logo_2.png" alt="">--}}
-        </div>
-
-        <div class="logo-icon text-center">
-            <a href="/"></a>
-        </div>
         <!--logo and iconic logo end-->
         <div class="left-side-inner">
             @include('manage.layouts.sidebar')
@@ -55,28 +45,15 @@
 
         <!-- header section start-->
         <div class="header-section">
-            <!--toggle button start-->
-            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
-            <!--toggle button end-->
-            <!--search start-->
-            {{--<form class="searchform" id="searchform_id">--}}
-                {{--<input type="text" class="form-control" name="keyword" value="" placeholder="Search here..." />--}}
-            {{--</form>--}}
-            <!--search end-->
             <div class="menu-right">
                 <ul class="notification-menu">
                     <li>
 
                     </li>
                     <li>
-                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            当前帐号:
-                            {{ Auth::guard()->user()['name'] }}
-                            <span class="caret"></span>
+                        <a href="{{ route('manage.logout') }}" class="btn" style="line-height: 35px">
+                            退出登录
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
-                            <li><a href="{{ route('manage.logout') }}"><i class="fa fa-sign-out"></i>退出登录</a></li>
-                        </ul>
                     </li>
 
                 </ul>
@@ -90,8 +67,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <!--breadcrumbs start -->
-                    <ul class="breadcrumb panel">
-                        <li><a href="{{ route('manage') }}"><i class="fa fa-home"></i>主页</a></li>
+                    <ul class="breadcrumb panel" style="margin-top: 44px; float: right;">
+                        当前位置：
+                        <li><a href="{{ route('manage') }}">主页</a></li>
                         @section('breadcrumb')
 
                         @show
