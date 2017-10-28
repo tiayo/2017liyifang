@@ -47,7 +47,7 @@
                         @foreach($lists as $list)
                         <tr>
                             <td>{{ $list['id'] }}</td>
-                            <td>{{ $list->category->name }}</td>
+                            <td>{{ $list->category->name ?? '无' }}</td>
                             <td>{{ $list['name'] }}</td>
                             <td>{{ $list['price'] }}</td>
                             <td>{{ $list['stock'] }}</td>
