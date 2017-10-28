@@ -26,8 +26,8 @@
         </div>
         <div class="nav-top clearfix">
             <a href="{{ route('home.category_group', ['id' => 1]) }}">精选产品</a>
-            <a href="{{ route('home.category_group', ['id' => 2]) }}">超值专区</a>
-            <a href="{{ route('home.category_group', ['id' => 3]) }}">大牌专区</a>
+            <a href="{{ route('home.category_group', ['id' => 2]) }}">新品上架</a>
+            <a href="{{ route('home.category_group', ['id' => 3]) }}">热卖宝贝</a>
             <a href="{{ route('home.category_group', ['id' => 4]) }}">折扣专区</a>
         </div>
         <div class="goods">

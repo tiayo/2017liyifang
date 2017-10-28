@@ -51,8 +51,8 @@
             width: 74%;
             height: 45px;
             margin: 0 13% 10px;
-            background-color: #ffda44;
-            color: #fff;
+            background-color: #e3f9fd;
+            color: #666;
             font-size: 16px;
             letter-spacing: 10px;
             text-indent: 10px;

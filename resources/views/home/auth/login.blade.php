@@ -58,8 +58,8 @@
             width: 74%;
             height: 45px;
             margin: 0 13% 10px;
-            background-color: #ffda44;
-            color: #fff;
+            background-color: #e3f9fd;
+            color: #666;
             font-size: 16px;
             letter-spacing: 10px;
             text-indent: 10px;
@@ -73,9 +73,9 @@
             height: 45px;
             margin: 0 13% 10px;
             background-color: #fff;
-            box-shadow: 1px 1px #ffda44 inset,
-            -1px -1px #ffda44 inset;
-            color: #ffda44;
+            box-shadow: 1px 1px #e3f9fd inset,
+            -1px -1px #e3f9fd inset;
+            color: #666;
             font-size: 16px;
             letter-spacing: 10px;
             text-indent: 10px;
